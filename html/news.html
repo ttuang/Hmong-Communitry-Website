@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hmong Association</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/maincontent.css">
+	<link rel="stylesheet" type="text/css" href="css/imagestyle.css">
+	<script type="text/javascript" src="js/javascript.js"></script> 
+	
+	<style>
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: Green;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+
+		#myBtn:hover {
+		  background-color: #555;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideToggle("slow");
+			});
+			
+				$("#flip").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+			
+				$("#flip2").click(function(){
+				$("#panel2").slideToggle("slow");
+			});
+			
+				$("#flip2").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+					$("#flip3").click(function(){
+				$("#panel3").slideToggle("slow");
+			});
+			
+				$("#flip3").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+						$("#flip4").click(function(){
+				$("#panel4").slideToggle("slow");
+			});
+			
+				$("#flip4").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+							$("#flip5").click(function(){
+				$("#panel5").slideToggle("slow");
+			});
+			
+				$("#flip5").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+								$("#flip6").click(function(){
+				$("#panel6").slideToggle("slow");
+			});
+			
+				$("#flip6").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+									$("#flip7").click(function(){
+				$("#panel7").slideToggle("slow");
+			});
+			
+				$("#flip7").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+										$("#flip8").click(function(){
+				$("#panel8").slideToggle("slow");
+			});
+			
+				$("#flip8").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+											$("#flip9").click(function(){
+				$("#panel9").slideToggle("slow");
+			});
+			
+				$("#flip9").hover(function(){
+				$(this).css("background-color", "#D3AFF5");
+						$(this).css('cursor','pointer');
+
+				}, function(){
+				$(this).css("background-color", "white");
+			});
+		});
+	</script>
+
+	<style> 
+		#panel, #flip {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel {
+			padding: 40px;
+			display: none;
+		}
+
+		#panel2, #flip2 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel2 {
+			padding: 40px;
+			display: none;
+		}
+		#panel3, #flip3 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel3 {
+			padding: 40px;
+			display: none;
+		}
+		#panel4, #flip4 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel4 {
+			padding: 40px;
+			display: none;
+		}
+		#panel4 a{
+			text-decoration: underline;
+			font-size: 15px;
+			
+		}
+		#panel4 a:hover { 
+			background-color: #C694F5;
+		}
+		#panel5, #flip5 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel5 {
+			padding: 40px;
+			display: none;
+		}
+		#panel6, #flip6 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel6 {
+			padding: 40px;
+			display: none;
+		}
+		#panel7, #flip7 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel7 {
+			padding: 40px;
+			display: none;
+		}
+		#panel8, #flip8 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel8 {
+			padding: 40px;
+			display: none;
+		}
+		#panel9, #flip9 {
+			padding: 5px;
+			text-align: left;
+			background-color: #ffffff;
+			width: 80%;
+		}
+
+		#panel9 {
+			padding: 40px;
+			display: none;
+		}
+	</style>
+	<style>
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		.gallery-row > .gallery-column {
+		  padding: 0 .1px;
+		}
+
+		.gallery-row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		.gallery-column {
+		  float: left;
+		  width: 25%;
+		}
+
+		/* The Modal (background) */
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  overflow: auto;
+		  background-color: black;
+		}
+
+		/* Modal Content */
+		.modal-content {
+		  position: relative;
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 0;
+		  width: 90%;
+		  max-width: 1200px;
+		}
+
+		/* The Close Button */
+		.close {
+		  color: white;
+		  position: absolute;
+		  top: 10px;
+		  right: 25px;
+		  font-size: 35px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #999;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		.mySlides {
+		  display: none;
+		}
+
+		.cursor {
+		  cursor: pointer
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		img {
+		  margin-bottom: -4px;
+		}
+
+		.caption-container {
+		  text-align: center;
+		  background-color: black;
+		  padding: 2px 16px;
+		  color: white;
+		}
+
+		.gallery {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.gallery:hover {
+		  opacity: 2;
+		}
+
+		img.hover-shadow {
+		  transition: 0.3s
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+		}
+	</style>
+
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="topheader">
+		<br/>
+		<a href="home.html"><img src="images/logo.gif" style="float:left;" alt="hmonglogo" class="hmonglogo" ></a>
+		<p class = "short"><i>Preserving and promoting the Hmong culture in the state of Washington</i></p>
+		<div class="navbar" id ="myTopnav">
+		<a href="home.html">Home</a>
+		<a href="abouthaw.html">About HAW</a>
+		<a href="news.html">News</a>
+		<a href="event.html">Events</a>
+		<a href="resource.html">Resources</a>
+		<a href="intro.html" target="_blank">History</a>
+	  
+	  <div class="dropdown">
+		<button class="dropbtn">Hmong New Year Festival
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Coming Soon</a>
+		  <a href="newyear2017.html">2017</a>
+		  <a href="newyear2016.html">2016</a>
+		  <a href="newyear2015.html">2015</a>
+		</div>
+	  </div>
+		<a href="meeting.html">Meeting Minutes</a>
+	  <a href="contactus.html">Contact Us</a>
+	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nab()">&#9776;</a>
+
+	</div>
+	<script>
+		function nab() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+		window.onscroll = function() {stic()};
+
+		var navbar = document.getElementById("myTopnav");
+		var sticky = navbar.offsetTop;
+
+	</script>
+
+
+
+  
+  
+	<div class="wrapper">
+		<div class="brow">
+			 <div class="page-content">
+			  
+				<h4>Category Archives: News</h4>
+				<strong>2017 HAW EDUCATION AWARDS</strong>
+
+	<p><img src="news/images/scholarship.png"  class = "flyer" alt="scholarship" width="600" height="400"></p>
+	<p>Applications for H.A.W.'s Education Awards are now live! Two $500 scholarships will be awarded to Hmong students who are <br>a) recent high school graduates or <br>b) college undergraduates and graduates</p>
+	<h3>REQUIRED DOCUMENTS</h3>
+	<ol>
+	  <li>Completed HAW Education Award application</li>
+	  <li>Proof of enrollment (copy of acceptance letter to institution and/or a registered class schedule for the 2017 fall quarter/semester</li>
+	  <li>Resume listing academic, work, and volunteering experience</li>
+	  <li>Your response to ONE of the essay questions listed in the application</li>
+	</ol> 
+	<p><b>DOWNLOAD APPLICATION HERE: HAW Education Award 2017  APPLICATIONS ARE DUE BY AUGUST 1, 2017.</b> Submit information electronically to HAW Award Committee Chairperson, Zer Vue at sillivue@hotmail.com</p>			
+
+
+	<div class="content-text">
+	<h4>Past recipients:</h4>
+	<h5>Rickey Chang, recipient of 2016 HAW Education Award</h5>
+
+	<p><img src="news/images/RickeyChang.jpg" alt="Rickey Chang" class ="content-img"  width="600" height="400"></p> <p>"Although the HAW Educational Scholarship awarded me a monetary value, the award itself meant much more than that. Winning the HAW Scholarship was my way to show the Hmong community that we can achieve. As a boy, I believed that college was only a dream. It seemed like a story being told that you could always picture but never experience. After years of hard work, I can say that the dream can be experienced, just as I have experienced mine. I would not have been able to achieve these accomplishments without support, such as the HAW Education Award." Rickey is currently continuing his education at Western Washington University where he plans on graduating in Fall of 2017. He is currently working towards finishing a Bachelor's of Science degree in Psychology. After graduation, he plans on pursuing a nursing career in order to apply his skills to help people in need. </p>
+
+	</div>
+
+	<div class="content-text">
+	<br> </br>
+	<h5>Rickey Chang, recipient of 2016 HAW Education Award</h5>
+
+	<p><img src="news/images/MichaelaVue.jpg" alt="Rickey Chang" class ="content-img"  width="600" height="400"></p> 
+	<p>"One of the most important things a community can give to their future generations is educational support and that is exactly what the HAW scholarship is all about.</P>
+
+	The scholarship helped pay for my summer internship class with Americorps and their Hunger Campaign across King County. At Western Washington University, summer tuition is less expensive than the school year, but is mostly paid out of the student's pocket due to depleted funds during the year. Though the internship was paid and I spent the weekends helping my family at the farmer's markets, the scholarship relieved much of the financial burden I had that summer. </P>
+
+	<P>The internship class that the scholarship helped paid for gave me the opportunity to learn beyond the classroom and in my community. I worked with many low-income families in my hometown of Federal Way where I could make a direct impact to improving their lives. I learned valuable lessons I am continuing to build on. </P>
+
+	<P>I graduated this June with debt lower than the national average of $30,000 thanks to the HAW scholarship. My internship has significantly improved my job selection and made my resume competitive. My work with Western Hmong Student Association and Americorps has reaffirmed my passion for helping minority students attain higher education. I plan to continue this work and serve my community as best I can where ever my career takes me. </P>
+
+	<P>I want to thank my mom, sister, grandma, grandpa, aunts and uncles for their support."
+	Michaela graduated from Western Washington University this June 2017 with a Bachelor of Arts degree in Multidisciplinary Studies, with a focus in Journalism. She minors in both  Public Relations and Internet Resource Creation and Management. She also holds a Content Development certificate.</P>
+	<b>William Yang, recipient of 2016 HAW Education Award </b> "The HAW scholarship helped improve my chances of attending college since money was always a problem. Currently, I am not certain of which career path I want to follow, but I am looking to go towards the medical or psychology field. The education that I have received so far has helped me improve my own personal life and to be able to educate people that do not understand some aspects of life such as why people have different behaviors or to just simply explain why people have different perspectives in life. "  </p>
+	</div>
+	<hr>
+	<div class="content-text">
+	<h4>HAW Elections 2017</h4>
+	<p><img src="news/images/hawelection.png" alt="HAW Election" class ="content-img"  width="600" height="400"></p><p>Dear Community Members,
+	<br>Are you interested in being a board member or officer of the Hmong Association of Washington (HAW)? It's that time of the year again for the HAW elections! HAW invites you and your family to help us select the board of directors and advisers for the next two years. The organization is a collaborative effort from the community; it belongs to all of us. For the organization to grow, we all have to give a helping hand. The organization has progressed in the past years; please come support it for the future.
+	 
+	<br>On election day, HAW will recap the past year and also talk about community events in the upcoming year. We hope to see everyone there!</br>
+	 
+	<br>What: HAW Board Elections
+	<br>When: Sunday, February 19, 2017 @1:00PM-3:30PM
+	<br>Where: Renton Highlands Library
+	<br>2801 NE 10th ST Renton, WA 98056
+	<br>*light refreshments will be provided</p>
+	<br>If you're interested please click on the links below for officer positions and more information on how you can be involved! 
+	<br>docx: HAW Officer Roles and Responsibilities 2017
+	<br>HAW CANDIDACY FORM 2017 (1)
+	<br>pdf: HAW Officer Roles and Responsibilities 2017
+	<br>HAW CANDIDACY FORM 2017 (2)
+	<br>For questions, please contact:
+	<br>Kabao Xiong
+	<br>kabaov.xiong@gmail.com
+	<br>(206)787-2511
+
+	</div>
+	<hr>
+
+	<div id="flip">* HAW Inaugural Picnic</div>
+	<div id="panel">
+	<h4>That's a wrap, Summer!</h4>
+	<strong> HAW Inaugural Picnic </strong>
+	<img src="news/images/HAWInauguralPicnic.jpg" alt="HAW Inaugural Picnic" class ="content-img"  width="600" height="400"> 
+	<p>As everyone goes back to school, we've still been hard at work planning our Hmong New Year festival coming up in November 2016. Here's a brief overview on what we've been up to the last few months.</P>
+	<img src="news/images/hawpicnicvolleyball.jpg" alt="HAW Inaugural Picnic" class ="content-imgr"  width="600" height="400">
+	<p>On July 30th, our community got together for a gathering up north in Washington. It's great to see the community come together to enjoy some great food, fun games, and each other's company. We even recognized our veterans that fought during the Secret War.
+	</p>
+	</div>	
+
+	<div id="flip2">* SYC + HAW Car Wash</div>
+	<div id="panel2">
+	<h4>That's a wrap, Summer!</h4>
+	<strong> HAW Inaugural Picnic </strong>
+	<img src="news/images/carwash.jpg" alt="HAW Inaugural Picnic" class ="content-img"  width="600" height="400"> 
+	<p>Spiral Youth Club and Hmong Association of Washington came together to collaborate on a Car Wash near Renton, WA. We raised a little over $500 with just a few hands on deck. Good job, everyone!</P>
+	<p>Even Senator Bob Hasegawa showed up to our car wash!
+	L to R: Jimmy, Zer, Senator Hasegawa, Kabao. Photo from: Zer Vue </p>
+	</div>
+
+	<div id="flip3">* Western Hmong Student Association (End of the Year Newsletter, 2016)</div>
+	<div id="panel3">
+	<h2 style="text-align:center">Western Hmong Student Association (End of the Year Newsletter, 2016)</h2>
+	<p>The Western Hmong Student Association at Western Washington University has accomplished so much this school year. We're so proud of your leadership roles and what you've done in our Hmong community. Please continue to build bridges and strive for greatness</p>
+
+	<div class="gallery-row">
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-001.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-002.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-003.jpg" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	  </div>
+	 
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-004.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-005.jpg" style="width:70%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-006.jpg" style="width:70%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-007.jpg" style="width:70%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+	  </div>
+		<div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-008.jpg" style="width:70%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-009.jpg" style="width:70%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-010.jpg" style="width:70%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-011.jpg" style="width:70%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+	  </div>
+		<div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-012.jpg" style="width:70%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-013.jpg" style="width:70%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-014.jpg" style="width:70%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-015.jpg" style="width:70%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+	  </div>
+		<div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-016.jpg" style="width:70%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-017.jpg" style="width:70%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+	  </div>
+	  
+	</div>
+
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+		<div class="mySlides">
+		  <div class="numbertext">1 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-001.jpg" style="width:50%">
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">2 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-002.jpg" style="width:50%">
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">3 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-003.jpg" style="width:50%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">4 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-004.jpg" style="width:50%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">5 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-005.jpg" style="width:50%">
+		</div>    
+	   
+		<div class="mySlides">
+		  <div class="numbertext">6 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-006.jpg" style="width:50%">
+		</div>
+		 <div class="mySlides">
+		  <div class="numbertext">7 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-007.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">8 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-008.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">9 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-009.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">10 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-010.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">11 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-011.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">12 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-012.jpg" style="width:50%">
+		</div>    <div class="mySlides">
+		  <div class="numbertext">13 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-013.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">14 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-014.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">15 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-015.jpg" style="width:50%">
+		</div>
+		
+			<div class="mySlides">
+		  <div class="numbertext">16 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-016.jpg" style="width:50%">
+		</div>
+		
+			<div class="mySlides">
+		  <div class="numbertext">17 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-017.jpg" style="width:50%">
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div class="caption-container">
+		  <p id="caption"></p>
+		</div>
+
+
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-001.jpg" style="width:100%" onclick="currentSlide(1)" alt="WHSA-End-of-the-Year-2016-page-001">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-002.jpg" style="width:100%" onclick="currentSlide(2)" alt="WHSA-End-of-the-Year-2016-page-002">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-003.jpg" style="width:100%" onclick="currentSlide(3)" alt="WHSA-End-of-the-Year-2016-page-003">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-004.jpg" style="width:100%" onclick="currentSlide(4)" alt="WHSA-End-of-the-Year-2016-page-004">
+		</div>
+	  
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-005.jpg" style="width:100%" onclick="currentSlide(5)" alt="WHSA-End-of-the-Year-2016-page-005">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-006.jpg" style="width:100%" onclick="currentSlide(6)" alt="WHSA-End-of-the-Year-2016-page-006">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-007.jpg" style="width:100%" onclick="currentSlide(7)" alt="WHSA-End-of-the-Year-2016-page-007">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-008.jpg" style="width:100%" onclick="currentSlide(8)" alt="WHSA-End-of-the-Year-2016-page-008">
+		</div>
+	  
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-009.jpg" style="width:100%" onclick="currentSlide(9)" alt="WHSA-End-of-the-Year-2016-page-009">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-010.jpg" style="width:100%" onclick="currentSlide(10)" alt="WHSA-End-of-the-Year-2016-page-010">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-011.jpg" style="width:100%" onclick="currentSlide(11)" alt="WHSA-End-of-the-Year-2016-page-011">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-012.jpg" style="width:100%" onclick="currentSlide(12)" alt="WHSA-End-of-the-Year-2016-page-012">
+		</div>
+	  
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-013.jpg" style="width:100%" onclick="currentSlide(13)" alt="WHSA-End-of-the-Year-2016-page-013">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-014.jpg" style="width:100%" onclick="currentSlide(14)" alt="WHSA-End-of-the-Year-2016-page-014">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-015.jpg" style="width:100%" onclick="currentSlide(15)" alt="WHSA-End-of-the-Year-2016-page-015">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-016.jpg" style="width:100%" onclick="currentSlide(16)" alt="WHSA-End-of-the-Year-2016-page-016">
+		</div>
+			<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-017.jpg" style="width:100%" onclick="currentSlide(17)" alt="WHSA-End-of-the-Year-2016-page-017">
+		</div>
+	  
+	</div>
+
+
+
+	</div>
+
+	<script>
+	function openModal() {
+	  document.getElementById('myModal').style.display = "block";
+	}
+
+	function closeModal() {
+	  document.getElementById('myModal').style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("gallery");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>		
+	</div>
+	<div id="flip4">* WA Hmong Youth Engagement Survey</div>
+	<div id="panel4">
+
+	<p>Greetings!<br>With the vast growing population of Hmong youth in the greater-Seattle area, we would greatly appreciate if you could take the Hmong Youth Engagement Survey below.The purpose of this 
+					survey is to gather information and data to better understand and meet the needs of the Hmong youth in our community. We hope as a community to provide more resources, opportunities 
+					and a voice for the Hmong youth.Participants in the survey must identify as a Hmong person,  be 25 years or younger and live in the state of Washington. We will be giving away two 
+					Hmong wooden chains from the project Street Stops and Mountain Tops to participants of the survey. 
+					<p>For more information about Street Stops to Mountain Tops, visit <a href="http://streetstops.org/">http://streetstops.org/ </a>  For any questions for concerns, please contact 
+					Kabao Xiong at <a href="mailto:kabaov.xiong@gmail.com" target="_top">kabaov.xiong@gmail.com</a> I've invited you to fill out the form WA Hmong Youth Engagement Survey.</p>				
+					
+					<p>To fill it out, visit: <a href="https://docs.google.com/forms/d/15-xZKVoaku26x3zuRJqV8aLkr0RWc0Mdhxlm77crCVg/viewform?c=0&w=1&usp=mail_form_link">
+					https://docs.google.com/forms/d/15-xZKVoaku26x3zuRJqV8aLkr0RWc0Mdhxlm77crCVg/viewform?c=0&w=1&usp=mail_form_link </a><br>Much Appreciated!</p>
+					</p>
+	</div>	
+
+	<div id="flip5">* Western Hmong Student Association (May 2016, Newsletter)</div>
+	<div id="panel5">
+
+	<p>We're so happy to be working with the Western Hmong Student Association (WSHA) to help build bridges in our Hmong community. See what their doing at WWU campus by checking out their FB page and their newsletter.</p>
+	<p><img src="news/images/WHSA-May-2016-Newsletter-page-001.jpg"  class = "flyer" width="800" height="400"></p>
+	<p><img src="news/images/WHSA-May-2016-Newsletter-page-002.jpg"  class = "flyer"  width="800" height="400"></p>
+
+	</div>
+
+	<div id="flip6">* King County Library System Immigrant Stories Project</div>
+	<div id="panel6">
+	<p>The King County Library System (KCLS)  Immigrant Stories Project KCLS is seeking participants willing to share their immigrant experience - personal history, what life was like before arriving to the U.S. and what life is like now. Stories will be audio recorded and will become part of a collection to raise awareness of the diversity of King County’s immigrant population. Stories will be uploaded to a KCLS YouTube channel for public listening and presented through special programming.</p>
+	<p>Please contact if you or someone you know is: -An immigrant at least 18 years old -Have conversational English skills -Are willing to give KCLS permission to audio record your story and take photos of you Selected storytellers will receive a $25 gift card and a copy of their audio story on CD. Interested? Contact: Jo Anderson Cavinta Diversity Services Coordinator King County Library System 425.369.3454 jacavinta@kcls.org KCLS Service Center 960 Newport Way NW Issaquah, WA 98027 </p>
+
+	<p><img src="news/images/4792-Immigrant-stories-v2-1-page-001.jpg"  class = "flyer" width="800" height="400"></p>
+
+	</div>
+
+	<div id="flip7">* King County Immigrant and Refugee Task Force Questionnaire</div>
+	<div id="panel7">
+	<p>King County Immigrant and Refugee Task Force is partnering up with the community members to help gain insights and perspectives on how King County can best meet the current and future needs of the 
+		community. It is important that we raise our concerns, however big or small, because our community does have needs for support. The more voices we have in this effort, the more the Hmong community is visible. </p>
+		<p>If you are Hmong and reside in King County of Washington and would like to partake, please look through these questionnaires and provide your answers to the best of your ability. If you have any questions, please feel free to contact Tsengyang Vang (tsengyangvang@gmail.com) for more information. Please click on the link below for the questionnaire (available in Hmong and English). Hmong KC Community Questions_English Hmong KC Community Questions_Hmoob   *Please submit the questionnaire to Tsengyang Vang via PO Box or email. HAW, PO Box 14492, Seattle, WA 98114 or tsengyangvang@gmail.com</p>
+
+	</div>
+
+	<div id="flip8">* 40 Voices: We Are Hmong</div>
+	<div id="panel8">
+	<p>We had the privilege of working on a special project title, "40 Voices: We are Hmong" for the Seattle Hmong New Year 2015. “40 Voices: We Are Hmong” was created to capture the journey, stories, and the voices of the Hmong community in the Northwest. As we celebrate our "40 Years in America" we encourage the community to engage and share our struggles and stories but most importantly our hopes and dreams. The three questions asked of the participants are as follow: 1. What doe it mean to be Hmong? 2. What do you appreciate about the Hmong culture? 3. What would you like to see improve in the Hmong community in the future? Some videos are Hmong speaking only and if you do not understand Hmong, the transcriptions for the people speaking Hmong are under the description on the youtube channel. Please watch, share, and enjoy! "Only together can we learn and grow as a community."  
+	</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7k9nL0cd0wc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+
+	<div id="flip9">* Spokane Hmong New Year</div>
+	<div id="panel9">
+	<p>Please join the Spokane Hmong Association for their New Year Celebration. </p>
+	<p><img src="news/images/Hmong-New-Year-Public-Version.png"  class = "flyer" width="800" height="400"></p>
+
+	</div>
+
+		</div>			  
+			<div class="arcives">
+				<aside>
+				<h2>Archives</h2>
+					<p><a href="june2017.html">June 2017</a></p>
+					<p><a href="february2017.html">February 2017</a></p>
+					<p><a href="january2017.html">January 2017</a></p>
+					<p><a href="september2016.html">September 2016</a></p>
+					<p><a href="june2016.html">June 2016</a></p>
+					<p><a href="may2016.html">May 2016</a></p>
+					<p><a href="april2016.html">April 2016</a></p>
+					<p><a href="march2016.html">March 2016</a></p>
+					<p><a href="november2015.html">November 2015</a></p>
+					<p><a href="july2015.html">July 2015</a></p>
+					<p><a href="june2015.html">June 2015</a></p>
+					<p><a href="november2013.html">November 2013</a></p>
+					<p><a href="september2013.html">September 2013</a></p>
+					<p><a href="june2013.html">June 2013</a></p>
+					<p><a href="may2013.html">May 2013</a></p>
+					<p><a href="january2013.html">January 2013</a></p>
+					<p><a href="september2012.html">September 2012</a></p>
+					<p><a href="june2012.html">June 2012</a></p>
+					<p><a href="october2011.html">October 2011</a></p>
+					<p><a href="march2010.html">March 2010</a></p>
+					<p><a href="december2009.html">December 2009</a></p>
+				</aside>
+				</div>
+			</div>
+		</div>
+	<div class="footer">
+		<div class="row">
+		  <div class="column">
+			<h2>LOCATION</h2>
+			<p> Kent, WA </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>ABOUT US</h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>LEARN MORE </h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class ="copyrightf">
+			<p>&copy; Copyright 2018 Hmong Organization of Washington.. All Rights Reserved.</p>
+		 </div>
+	</div>
+	<script>
+	  // When the user scrolls down 20px from the top of the document, show the button
+	  window.onscroll = function() {scrollFunction()};
+
+	  function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("myBtn").style.display = "block";
+		  } else {
+			  document.getElementById("myBtn").style.display = "none";
+		  }
+	  }
+
+	  // When the user clicks on the button, scroll to the top of the document
+	  function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+	  }
+	</script>
+</body>
+</html>

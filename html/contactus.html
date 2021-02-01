@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hmong Association</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/maincontent.css">
+	<link rel="stylesheet" type="text/css" href="css/imagestyle.css">
+	<script type="text/javascript" src="js/javascript.js"></script> 
+	
+	<style>
+		#main {
+		max-width:100%;
+		width:100%;
+		height: 80%;
+		margin:0 auto;
+		position:relative;
+		}
+		#contact-form input[type="text"],
+		#contact-form input[type="email"],
+		#contact-form input[type="tel"],
+		#contact-form input[type="url"],
+		#contact-form textarea,
+		#contact-form button[type="submit"] {
+			font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		#contact-form {
+			text-shadow:0 1px 0 #FFF;
+			border-radius:4px;
+			-webkit-border-radius:4px;
+			-moz-border-radius:4px;
+			background:#F9F9F9;
+			padding:25px;
+		}
+		#contact-form h3 {
+			color:black;
+			display:block;
+			font-size:28px;
+		}
+		#contact-form h4 {
+			margin:5px 0 15px;
+			display:block;
+			font-size:13px;
+		}
+		#contact-form label span {
+			cursor:pointer;
+			color:black;
+			display:block;
+			margin:5px 0;
+			font-weight:900;
+		}
+		#contact-form input[type="text"],
+		#contact-form input[type="email"],
+		#contact-form input[type="tel"],
+		#contact-form input[type="url"],
+		#contact-form textarea {
+			width:100%;
+			box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+			-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+			-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+			border:1px solid #CCC;
+			background:#FFF;
+			margin:0 0 5px;
+			padding:10px;
+			border-radius:5px;
+		}
+		#contact-form input[type="text"]:hover,
+		#contact-form input[type="email"]:hover,
+		#contact-form input[type="tel"]:hover,
+		#contact-form input[type="url"]:hover,
+		#contact-form textarea:hover {
+			-webkit-transition:border-color 0.3s ease-in-out;
+			-moz-transition:border-color 0.3s ease-in-out;
+			transition:border-color 0.3s ease-in-out;
+			border:1px solid #AAA;
+		}
+		#contact-form textarea {
+			height:100px;
+			max-width:100%;
+		}
+		#contact-form button[type="submit"] {
+			cursor:pointer;
+			width:100%;
+			border:none;
+			background:black;
+			background-image:linear-gradient(bottom,black 0%, black 52%);
+			background-image:-moz-linear-gradient(bottom,black 0%, black 52%);
+			background-image:-webkit-linear-gradient(bottom, black 0%, black 52%);
+			color:#FFF;
+			margin:0 0 5px;
+			padding:10px;
+			border-radius:5px;
+		}
+		#contact-form button[type="submit"]:hover {
+			background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+			background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+			background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+			-webkit-transition:background 0.3s ease-in-out;
+			-moz-transition:background 0.3s ease-in-out;
+			transition:background-color 0.3s ease-in-out;
+		}
+		#contact-form button[type="submit"]:active {
+			box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+		}
+		#contact-form input:focus,
+		#contact-form textarea:focus {
+			outline:0;
+			border:1px solid #999;
+		}
+		::-webkit-input-placeholder {
+			color:#888;
+		}
+		:-moz-placeholder {
+			color:#888;
+		}
+		::-moz-placeholder {
+			color:#888;
+		}
+		:-ms-input-placeholder {
+			color:#888;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="topheader">
+	 <br/>
+		<a href="home.html"><img src="images/logo.gif" style="float:left;" alt="hmonglogo" class="hmonglogo" ></a>
+		<p class = "short"><i>Preserving and promoting the Hmong culture in the state of Washington</i></p>
+		<div class="navbar" id ="myTopnav">
+		<a href="home.html">Home</a>
+		<a href="abouthaw.html">About HAW</a>
+		<a href="news.html">News</a>
+		<a href="event.html">Events</a>
+		<a href="resource.html">Resources</a>
+		<a href="intro.html" target="_blank">History</a>
+	<div class="dropdown">
+		<button class="dropbtn">Hmong New Year Festival</button>
+		<div class="dropdown-content">
+		  <a href="#">Coming Soon</a>
+		  <a href="newyear2017.html">2017</a>
+		  <a href="newyear2016.html">2016</a>
+		  <a href="newyear2015.html">2015</a>
+		</div>
+	</div>
+		<a href="meeting.html">Meeting Minutes</a>
+		<a href="contactus.html">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nab()">&#9776;</a>
+
+	</div>
+	<script>
+	function nab() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	window.onscroll = function() {stic()};
+
+	var navbar = document.getElementById("myTopnav");
+	var sticky = navbar.offsetTop;
+
+	function stic() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+
+	<div class="wrapper">
+		<div class="brow">
+			  <div class="page-content">
+			  		<div id="main" style="padding:50px 0 0 0;">
+						<!-- Form -->
+						<form id="contact-form" action="/" method="post">
+							<h3>Get in touch</h3>
+							<h4>Fill in the form below, and we'll get back to you within 24 hours.</h4>
+							<div>
+								<label>
+									<span>Name: (required)</span>
+									<input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+								</label>
+							</div>
+							<div>
+								<label>
+									<span>Email: (required)</span>
+									<input placeholder="Please enter your email address" type="email" tabindex="2" required>
+								</label>
+							</div>
+							<div>
+								<label>
+									<span>Message: (required)</span>
+									<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+								</label>
+							</div>
+							<div>
+								<button name="submit" type="submit" id="contact-submit">Send Email</button>
+							</div>
+						</form>
+					<!-- /Form -->
+					</div>			  
+				</div>
+			</div>				
+			</div>			  
+
+		</div>
+	
+	</div>
+
+	<div class="footer">
+		<div class="row">
+		  <div class="column">
+			<h2>LOCATION</h2>
+			<p> Kent, WA </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>ABOUT US</h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>LEARN MORE </h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class ="copyrightf">
+			<p>&copy; Copyright 2018 Hmong Organization of Washington.. All Rights Reserved.</p>
+		 </div>
+	</div>
+</body>
+</html>

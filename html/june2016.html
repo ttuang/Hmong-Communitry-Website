@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hmong Association</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/maincontent.css">
+	<link rel="stylesheet" type="text/css" href="css/imagestyle.css">
+	<script type="text/javascript" src="js/javascript.js"></script> 
+	
+	<style>
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: Green;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+
+		#myBtn:hover {
+		  background-color: #555;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style>
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		.gallery-row > .gallery-column {
+		  padding: 0 .1px;
+		}
+
+		.gallery-row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		.gallery-column {
+		  float: left;
+		  width: 25%;
+		}
+
+		/* The Modal (background) */
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  overflow: auto;
+		  background-color: black;
+		}
+
+		/* Modal Content */
+		.modal-content {
+		  position: relative;
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 0;
+		  width: 90%;
+		  max-width: 1200px;
+		}
+
+		/* The Close Button */
+		.close {
+		  color: white;
+		  position: absolute;
+		  top: 10px;
+		  right: 25px;
+		  font-size: 35px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #999;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		.mySlides {
+		  display: none;
+		}
+
+		.cursor {
+		  cursor: pointer
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		img {
+		  margin-bottom: -4px;
+		}
+
+		.caption-container {
+		  text-align: center;
+		  background-color: black;
+		  padding: 2px 16px;
+		  color: white;
+		}
+
+		.gallery {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.gallery:hover {
+		  opacity: 2;
+		}
+
+		img.hover-shadow {
+		  transition: 0.3s
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+		}
+	</style>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="topheader">
+		<br/>
+		<a href="home.html"><img src="images/logo.gif" style="float:left;" alt="hmonglogo" class="hmonglogo" ></a>
+		<p class = "short"><i>Preserving and promoting the Hmong culture in the state of Washington</i></p>
+		<div class="navbar" id ="myTopnav">
+		<a href="home.html">Home</a>
+		<a href="abouthaw.html">About HAW</a>
+		<a href="news.html">News</a>
+		<a href="event.html">Events</a>
+		<a href="resource.html">Resources</a>
+		<a href="intro.html" target="_blank">History</a>
+	  
+	  <div class="dropdown">
+		<button class="dropbtn">Hmong New Year Festival
+		</button>
+		<div class="dropdown-content">
+		  <a href="#">Coming Soon</a>
+		  <a href="newyear2017.html">2017</a>
+		  <a href="newyear2016.html">2016</a>
+		  <a href="newyear2015.html">2015</a>
+		</div>
+	  </div>
+		<a href="meeting.html">Meeting Minutes</a>
+	  <a href="contactus.html">Contact Us</a>
+	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nab()">&#9776;</a>
+
+	</div>
+	<script>
+		function nab() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+		window.onscroll = function() {stic()};
+
+		var navbar = document.getElementById("myTopnav");
+		var sticky = navbar.offsetTop;
+
+	</script>
+
+
+
+  
+  
+	<div class="wrapper">
+		<div class="brow">
+			 <div class="page-content">
+	<hr>
+	<h4>Monthly Archives: June 2016</h4>
+	<strong>Western Hmong Student Association (End of the Year Newsletter, 2016)</strong>
+	<p>The Western Hmong Student Association at Western Washington University has accomplished so much this school year. We're so proud of your leadership roles and what you've done in our Hmong community. Please continue to build bridges and strive for greatness</p>
+
+	<div class="gallery-row">
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-001.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-002.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-003.jpg" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	  </div>
+	 
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-004.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-005.jpg" style="width:70%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-006.jpg" style="width:70%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-007.jpg" style="width:70%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+	  </div>
+		<div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-008.jpg" style="width:70%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-009.jpg" style="width:70%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-010.jpg" style="width:70%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-011.jpg" style="width:70%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+	  </div>
+		<div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-012.jpg" style="width:70%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-013.jpg" style="width:70%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-014.jpg" style="width:70%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-015.jpg" style="width:70%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+	  </div>
+		<div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-016.jpg" style="width:70%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+	  </div>
+	  <div class="gallery-column">
+		<img src="news/gallery/WHSA-End-of-the-Year-2016-page-017.jpg" style="width:70%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+	  </div>
+	  
+	</div>
+
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+
+		<div class="mySlides">
+		  <div class="numbertext">1 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-001.jpg" style="width:50%">
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">2 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-002.jpg" style="width:50%">
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">3 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-003.jpg" style="width:50%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">4 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-004.jpg" style="width:50%">
+		</div>
+		
+		<div class="mySlides">
+		  <div class="numbertext">5 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-005.jpg" style="width:50%">
+		</div>    
+	   
+		<div class="mySlides">
+		  <div class="numbertext">6 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-006.jpg" style="width:50%">
+		</div>
+		 <div class="mySlides">
+		  <div class="numbertext">7 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-007.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">8 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-008.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">9 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-009.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">10 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-010.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">11 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-011.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">12 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-012.jpg" style="width:50%">
+		</div>    <div class="mySlides">
+		  <div class="numbertext">13 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-013.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">14 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-014.jpg" style="width:50%">
+		</div>
+			<div class="mySlides">
+		  <div class="numbertext">15 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-015.jpg" style="width:50%">
+		</div>
+		
+			<div class="mySlides">
+		  <div class="numbertext">16 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-016.jpg" style="width:50%">
+		</div>
+		
+			<div class="mySlides">
+		  <div class="numbertext">17 / 17</div>
+		  <img src="news/gallery/WHSA-End-of-the-Year-2016-page-017.jpg" style="width:50%">
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div class="caption-container">
+		  <p id="caption"></p>
+		</div>
+
+
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-001.jpg" style="width:100%" onclick="currentSlide(1)" alt="WHSA-End-of-the-Year-2016-page-001">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-002.jpg" style="width:100%" onclick="currentSlide(2)" alt="WHSA-End-of-the-Year-2016-page-002">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-003.jpg" style="width:100%" onclick="currentSlide(3)" alt="WHSA-End-of-the-Year-2016-page-003">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-004.jpg" style="width:100%" onclick="currentSlide(4)" alt="WHSA-End-of-the-Year-2016-page-004">
+		</div>
+	  
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-005.jpg" style="width:100%" onclick="currentSlide(5)" alt="WHSA-End-of-the-Year-2016-page-005">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-006.jpg" style="width:100%" onclick="currentSlide(6)" alt="WHSA-End-of-the-Year-2016-page-006">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-007.jpg" style="width:100%" onclick="currentSlide(7)" alt="WHSA-End-of-the-Year-2016-page-007">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-008.jpg" style="width:100%" onclick="currentSlide(8)" alt="WHSA-End-of-the-Year-2016-page-008">
+		</div>
+	  
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-009.jpg" style="width:100%" onclick="currentSlide(9)" alt="WHSA-End-of-the-Year-2016-page-009">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-010.jpg" style="width:100%" onclick="currentSlide(10)" alt="WHSA-End-of-the-Year-2016-page-010">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-011.jpg" style="width:100%" onclick="currentSlide(11)" alt="WHSA-End-of-the-Year-2016-page-011">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-012.jpg" style="width:100%" onclick="currentSlide(12)" alt="WHSA-End-of-the-Year-2016-page-012">
+		</div>
+	  
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-013.jpg" style="width:100%" onclick="currentSlide(13)" alt="WHSA-End-of-the-Year-2016-page-013">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-014.jpg" style="width:100%" onclick="currentSlide(14)" alt="WHSA-End-of-the-Year-2016-page-014">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-015.jpg" style="width:100%" onclick="currentSlide(15)" alt="WHSA-End-of-the-Year-2016-page-015">
+		</div>
+		<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-016.jpg" style="width:100%" onclick="currentSlide(16)" alt="WHSA-End-of-the-Year-2016-page-016">
+		</div>
+			<div class="gallery-column">
+		  <img class="gallery cursor" src="news/gallery/WHSA-End-of-the-Year-2016-page-017.jpg" style="width:100%" onclick="currentSlide(17)" alt="WHSA-End-of-the-Year-2016-page-017">
+		</div>
+
+	</div>
+
+	<script>
+	function openModal() {
+	  document.getElementById('myModal').style.display = "block";
+	}
+
+	function closeModal() {
+	  document.getElementById('myModal').style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("gallery");
+	  var captionText = document.getElementById("caption");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";
+	  dots[slideIndex-1].className += " active";
+	  captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>		
+	</div>
+
+
+		</div>			  
+			<div class="arcives">
+				<aside>
+				<h2>Archives</h2>
+					<p><a href="june2017.html">June 2017</a></p>
+					<p><a href="february2017.html">February 2017</a></p>
+					<p><a href="january2017.html">January 2017</a></p>
+					<p><a href="september2016.html">September 2016</a></p>
+					<p><a href="june2016.html">June 2016</a></p>
+					<p><a href="may2016.html">May 2016</a></p>
+					<p><a href="april2016.html">April 2016</a></p>
+					<p><a href="march2016.html">March 2016</a></p>
+					<p><a href="november2015.html">November 2015</a></p>
+					<p><a href="july2015.html">July 2015</a></p>
+					<p><a href="june2015.html">June 2015</a></p>
+					<p><a href="november2013.html">November 2013</a></p>
+					<p><a href="september2013.html">September 2013</a></p>
+					<p><a href="june2013.html">June 2013</a></p>
+					<p><a href="may2013.html">May 2013</a></p>
+					<p><a href="january2013.html">January 2013</a></p>
+					<p><a href="september2012.html">September 2012</a></p>
+					<p><a href="june2012.html">June 2012</a></p>
+					<p><a href="october2011.html">October 2011</a></p>
+					<p><a href="march2010.html">March 2010</a></p>
+					<p><a href="december2009.html">December 2009</a></p>
+				</aside>
+				</div>
+			</div>
+		</div>
+	<div class="footer">
+		<div class="row">
+		  <div class="column">
+			<h2>LOCATION</h2>
+			<p> Kent, WA </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>ABOUT US</h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>LEARN MORE </h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class ="copyrightf">
+			<p>&copy; Copyright 2018 Hmong Organization of Washington.. All Rights Reserved.</p>
+		 </div>
+	</div>
+	<script>
+	  // When the user scrolls down 20px from the top of the document, show the button
+	  window.onscroll = function() {scrollFunction()};
+
+	  function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("myBtn").style.display = "block";
+		  } else {
+			  document.getElementById("myBtn").style.display = "none";
+		  }
+	  }
+
+	  // When the user clicks on the button, scroll to the top of the document
+	  function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+	  }
+	</script>
+</body>
+</html>

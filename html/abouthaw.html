@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hmong Association</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/maincontent.css">
+	<link rel="stylesheet" type="text/css" href="css/imagestyle.css">
+	<script type="text/javascript" src="js/javascript.js"></script> 
+	
+	<style>
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: Green;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+
+		#myBtn:hover {
+		  background-color: #555;
+		}
+	</style>
+</head>
+
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="topheader">
+	 <br/>
+		<a href="home.html"><img src="images/logo.gif" style="float:left;" alt="hmonglogo" class="hmonglogo" ></a>
+		<p class = "short"><i>Preserving and promoting the Hmong culture in the state of Washington</i></p>
+		<!--control the sticky menu bar by javascript-->
+		<div class="navbar" id ="myTopnav">
+		<a href="home.html">Home</a>
+		<a href="abouthaw.html">About HAW</a>
+		<a href="news.html">News</a>
+		<a href="event.html">Events</a>
+		<a href="resource.html">Resources</a>
+		<a href="intro.html">History</a>
+		<div class="dropdown">
+			<button class="dropbtn">Hmong New Year Festival</button>
+			<div class="dropdown-content">
+		  <a href="#">Coming Soon</a>
+		  <a href="newyear2017.html">2017</a>
+		  <a href="newyear2016.html">2016</a>
+		  <a href="newyear2015.html">2015</a>
+			</div>
+		</div>
+		<a href="meeting.html">Meeting Minutes</a>
+		<a href="contactus.html">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nab()">&#9776;</a>
+	</div>
+		<script>
+		function nab() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+		window.onscroll = function() {stic()};
+
+		var navbar = document.getElementById("myTopnav");
+		var sticky = navbar.offsetTop;
+
+ 
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+
+	<div class="wrapper">
+		<div class="brow">
+			  <div class="page-content">
+				<h4>About HAW</h4>
+				<p>Established in 1983, the Hmong Association of Washington (H.A.W.) is a 501(c)(3) nonprofit organization that exists to serve the Hmong community in the Puget Sound region 
+					(King, Pierce, Snohomish). The Hmong people are an underrepresented minority group within Southeast Asian countries and H.A.W's mission is to serve the Hmong community in the 
+					greater Seattle area. Throughout the year, H.A.W holds community events that are open to the public in which they provide cultural and educational activities year round. HAW's 
+					mission is to serve the Hmong community in these ways: (1) to preserve and promote the culture, (2) to advocate for the Hmong people, and (3) to promote education in the community. 
+					Your donations are tax-deductible and go toward (a) cultural programming for the annual Hmong New Year Festival, (b) educational awards to promote higher education within our 
+					community, and (c) educational/cultural community events. We are always accepting volunteers, donations, and ideas to help our community. Email H.A.W. President, Kabao Xiong at 
+					kabaov.xiong@gmail.com with any questions or comments.</p>
+				<img src="images/hawboard.jpg" alt="boardmembers" class="content-img" width="600" height="400">
+				<p> <b>Officers President</b> -Kabao Xiong <br><b>Vice-President</b> - Hua Thao</br> <b>Treasurer</b> - Alice Chang <br><b>Secretary/PR Assistant</b> - Kia Vang</br> 
+					<br><b>Board Members:</b> Kue Moua Zer Vue Chai Chue Moua Dr. Kay Lee Moua Jaylie Txoojzeb Xiong Lia Yang Vamhawj Xiong Yee Xiong</br> 
+					<br><b>Advisors:</b> Bee Chang Vang Toua Xiong</br> <br><b>Hmong Association of Washington</b></br> P.O. BOX 14492 
+					Seattle, WA 98114 <br>(hello@hmongofwa.org)
+			  </div>			  
+			<div class="arcives">
+				<aside>
+				<h2>Archives</h2>
+					<p><a href="june2017.html">June 2017</a></p>
+					<p><a href="february2017.html">February 2017</a></p>
+					<p><a href="january2017.html">January 2017</a></p>
+					<p><a href="september2016.html">September 2016</a></p>
+					<p><a href="june2016.html">June 2016</a></p>
+					<p><a href="may2016.html">May 2016</a></p>
+					<p><a href="april2016.html">April 2016</a></p>
+					<p><a href="march2016.html">March 2016</a></p>
+					<p><a href="november2015.html">November 2015</a></p>
+					<p><a href="july2015.html">July 2015</a></p>
+					<p><a href="june2015.html">June 2015</a></p>
+					<p><a href="november2013.html">November 2013</a></p>
+					<p><a href="september2013.html">September 2013</a></p>
+					<p><a href="june2013.html">June 2013</a></p>
+					<p><a href="may2013.html">May 2013</a></p>
+					<p><a href="january2013.html">January 2013</a></p>
+					<p><a href="september2012.html">September 2012</a></p>
+					<p><a href="june2012.html">June 2012</a></p>
+					<p><a href="october2011.html">October 2011</a></p>
+					<p><a href="march2010.html">March 2010</a></p>
+					<p><a href="december2009.html">December 2009</a></p>
+				</aside>
+				</div>
+			</div>
+	
+		</div>
+	<div class="footer">
+		<div class="row">
+		  <div class="column">
+			<h2>LOCATION</h2>
+			<p> Kent, WA </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>ABOUT US</h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>LEARN MORE </h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class ="copyrightf">
+			<p>&copy; Copyright 2018 Hmong Organization of Washington.. All Rights Reserved.</p>
+		 </div>
+	</div>
+	<script>
+	  // When the user scrolls down 20px from the top of the document, show the button
+	  window.onscroll = function() {scrollFunction()};
+
+	  function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("myBtn").style.display = "block";
+		  } else {
+			  document.getElementById("myBtn").style.display = "none";
+		  }
+	  }
+
+	  // When the user clicks on the button, scroll to the top of the document
+	  function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+	  }
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+	.content-img {
+    width: 70%;
+    height: auto;
+}
+* {
+    box-sizing: border-box;
+}
+.page-content {
+    float: left;
+    width: 80%;
+    padding: 10px;
+    height: auto; 
+}
+.page-content a {
+
+font-size: 14px;
+  color: black;
+
+}
+.page-content h2 a:hover {
+  color: #DAF7A6;
+}
+.page-content a:hover {
+	background-color: #CEA6F3;
+}
+.page-content h4 {
+	font-size: 24px;
+	color:#AC5EF5;
+}
+
+.brow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.arcives {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    height: auto; 
+}
+/* unvisited link */
+.arcives a:link {
+    color: blue;
+		  text-decoration:  none;
+
+}
+
+/* visited link */
+.arcives a:visited {
+    color: green;
+}
+
+/* mouse over link */
+.arcives a:hover {
+    color: blue;
+}
+
+/* selected link */
+.arcives a:active {
+    color: red;
+}
+
+
+@media screen and (max-width: 600px) {
+    .arcives {
+        width: 100%;
+    }
+@media screen and (max-width: 600px) {
+    .page-content {
+        width: 100%;
+    }
+}

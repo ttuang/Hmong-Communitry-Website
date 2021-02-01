@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hmong Association</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<link rel="stylesheet" type="text/css" href="css/maincontent.css">
+	<link rel="stylesheet" type="text/css" href="css/imagestyle.css">
+	<script type="text/javascript" src="js/javascript.js"></script> 
+	
+	<style>
+		#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: Green;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		}
+
+		#myBtn:hover {
+		  background-color: #555;
+		}
+	</style>
+
+</head>
+
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div class="topheader">
+	 <br/>
+		<a href="home.html"><img src="images/logo.gif" style="float:left;" alt="hmonglogo" class="hmonglogo" ></a>
+		<p class = "short"><i>Preserving and promoting the Hmong culture in the state of Washington</i></p>
+		<!--control the sticky menu bar by javascript-->
+		<div class="navbar" id ="myTopnav">
+		<a href="home.html">Home</a>
+		<a href="abouthaw.html">About HAW</a>
+		<a href="news.html">News</a>
+		<a href="event.html">Events</a>
+		<a href="resource.html">Resources</a>
+		<a href="intro.html" target="_blank">History</a>
+		<div class="dropdown">
+			<button class="dropbtn">Hmong New Year Festival</button>
+			<div class="dropdown-content">
+		  <a href="#">Coming Soon</a>
+		  <a href="newyear2017.html">2017</a>
+		  <a href="newyear2016.html">2016</a>
+		  <a href="newyear2015.html">2015</a>
+			</div>
+		</div>
+		<a href="meeting.html">Meeting Minutes</a>
+		<a href="contactus.html">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nab()">&#9776;</a>
+	</div>
+		<script>
+		function nab() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		}
+		window.onscroll = function() {stic()};
+
+		var navbar = document.getElementById("myTopnav");
+		var sticky = navbar.offsetTop;
+
+ 
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+
+	<div class="wrapper">
+		<div class="brow">
+			  <div class="page-content">
+				<h4>Inaugural HAW Freedom Celebration Picnic</h4>
+				<p>Are you ready for summer? Ready to play some volleyball? Ready to have fun in the sun? We are! Please join us in our Inaugural Freedom Celebration Picnic on Saturday, July 30, 2016  from 9am-10pm at Skykomish River Park (413 Sky River Pkwy, Monroe WA). This is a FREE family friendly event for the Hmong community hosted by the Hmong Association of Washington.</p>
+				<p><img src="event/images/HMONGWAFREEDOMFLYER_FINALDRAFT_PRINT-page-001.jpg"  class = "flyer" width="800" height="400"></p>
+				<hr>
+				<h4>WA Hmong Youth Engagement Survey</h4>
+	<p>Greetings!<br>With the vast growing population of Hmong youth in the greater-Seattle area, we would greatly appreciate if you could take the Hmong Youth Engagement Survey below.The purpose of this 
+					survey is to gather information and data to better understand and meet the needs of the Hmong youth in our community. We hope as a community to provide more resources, opportunities 
+					and a voice for the Hmong youth.Participants in the survey must identify as a Hmong person,  be 25 years or younger and live in the state of Washington. We will be giving away two 
+					Hmong wooden chains from the project Street Stops and Mountain Tops to participants of the survey. 
+					<p>For more information about Street Stops to Mountain Tops, visit <a href="http://streetstops.org/">http://streetstops.org/ </a>  For any questions for concerns, please contact 
+					Kabao Xiong at <a href="mailto:kabaov.xiong@gmail.com" target="_top">kabaov.xiong@gmail.com</a> I've invited you to fill out the form WA Hmong Youth Engagement Survey.</p>				
+					
+					<p>To fill it out, visit: <a href="https://docs.google.com/forms/d/15-xZKVoaku26x3zuRJqV8aLkr0RWc0Mdhxlm77crCVg/viewform?c=0&w=1&usp=mail_form_link" >
+					https://docs.google.com/forms/d/15-xZKVoaku26x3zuRJqV8aLkr0RWc0Mdhxlm77crCVg/viewform?c=0&w=1&usp=mail_form_link </a><br>Much Appreciated!</p>
+					</p>
+					<hr>
+					<strong>Western Hmong Student Association (May 2016, Newsletter)</strong>
+						<p>We're so happy to be working with the Western Hmong Student Association (WSHA) to help build bridges in our Hmong community. See what their doing at WWU campus by checking out their FB page and their newsletter.</p>
+						<p><img src="news/images/WHSA-May-2016-Newsletter-page-001.jpg"  class = "flyer" width="800" height="400"></p>
+						<p><img src="news/images/WHSA-May-2016-Newsletter-page-002.jpg"  class = "flyer"  width="800" height="400"></p>
+					<hr>
+					<strong>King County Library System Immigrant Stories Project</strong>
+						<p>The King County Library System (KCLS)  Immigrant Stories Project KCLS is seeking participants willing to share their immigrant experience - personal history, what life was like before arriving to the U.S. and what life is like now. Stories will be audio recorded and will become part of a collection to raise awareness of the diversity of King County's immigrant population. Stories will be uploaded to a KCLS YouTube channel for public listening and presented through special programming.</p>
+						<p>Please contact if you or someone you know is: -An immigrant at least 18 years old -Have conversational English skills -Are willing to give KCLS permission to audio record your story and take photos of you Selected storytellers will receive a $25 gift card and a copy of their audio story on CD. Interested? Contact: Jo Anderson Cavinta Diversity Services Coordinator King County Library System 425.369.3454 jacavinta@kcls.org KCLS Service Center 960 Newport Way NW Issaquah, WA 98027 </p>
+						<p><img src="news/images/4792-Immigrant-stories-v2-1-page-001.jpg"  class = "flyer" width="800" height="400"></p>
+
+
+
+			  </div>			  
+			<div class="arcives">
+				<aside>
+				<h2>Archives</h2>
+					<p><a href="june2017.html">June 2017</a></p>
+					<p><a href="february2017.html">February 2017</a></p>
+					<p><a href="january2017.html">January 2017</a></p>
+					<p><a href="september2016.html">September 2016</a></p>
+					<p><a href="june2016.html">June 2016</a></p>
+					<p><a href="may2016.html">May 2016</a></p>
+					<p><a href="april2016.html">April 2016</a></p>
+					<p><a href="march2016.html">March 2016</a></p>
+					<p><a href="november2015.html">November 2015</a></p>
+					<p><a href="july2015.html">July 2015</a></p>
+					<p><a href="june2015.html">June 2015</a></p>
+					<p><a href="november2013.html">November 2013</a></p>
+					<p><a href="september2013.html">September 2013</a></p>
+					<p><a href="june2013.html">June 2013</a></p>
+					<p><a href="may2013.html">May 2013</a></p>
+					<p><a href="january2013.html">January 2013</a></p>
+					<p><a href="september2012.html">September 2012</a></p>
+					<p><a href="june2012.html">June 2012</a></p>
+					<p><a href="october2011.html">October 2011</a></p>
+					<p><a href="march2010.html">March 2010</a></p>
+					<p><a href="december2009.html">December 2009</a></p>
+				</aside>
+				</div>
+			</div>
+	
+		</div>
+	<div class="footer">
+		<div class="row">
+		  <div class="column">
+			<h2>LOCATION</h2>
+			<p> Kent, WA </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>ABOUT US</h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class="column">
+			<h2>LEARN MORE </h2>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+			<p> add </p>
+		  </div>
+		  <div class ="copyrightf">
+			<p>&copy; Copyright 2018 Hmong Organization of Washington.. All Rights Reserved.</p>
+		 </div>
+	</div>
+	<script>
+	  // When the user scrolls down 20px from the top of the document, show the button
+	  window.onscroll = function() {scrollFunction()};
+
+	  function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("myBtn").style.display = "block";
+		  } else {
+			  document.getElementById("myBtn").style.display = "none";
+		  }
+	  }
+
+	  // When the user clicks on the button, scroll to the top of the document
+	  function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+	  }
+	</script>
+</body>
+</html>
